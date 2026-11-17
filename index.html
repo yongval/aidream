@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Floating Books — An Endless Library</title>
+    <meta name="theme-color" content="#050609" />
+    <link rel="stylesheet" href="floating_books.css" />
+    <script src="floating_books.js" defer></script>
+  </head>
+  <body>
+    <canvas
+      id="art"
+      role="img"
+      aria-label="Floating book covers in a connected hyperbolic map. Drag or scroll to navigate."
+    ></canvas>
+
+    <div id="count" aria-live="polite" role="status">
+      <div class="numbers">
+        <span id="loaded">—</span>
+        <span class="separator">/</span>
+        <span id="available">—</span>
+      </div>
+      <div class="text">book covers loaded / Open Library total</div>
+      <div class="meta" id="status">Connecting to Open Library…</div>
+    </div>
+
+    <section id="dream" aria-labelledby="dream-title">
+      <h1 id="dream-title">AI's Dream — An Endless Library</h1>
+      <p id="dream-description">
+        An interactive visualization of an AI-imagined dream, where a finite collection of books about dreams unfolds endlessly through hyperbolic geometry.
+      </p>
+    </section>
+
+    <a class="about-link" href="about.html">About</a>
+  </body>
+</html>
